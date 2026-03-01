@@ -31,5 +31,6 @@ int main()
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
+    std::cout << "May the Force be with you" << atlag << std::endl;
     return 0;
 }
