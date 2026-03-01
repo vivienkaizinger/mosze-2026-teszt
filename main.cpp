@@ -4,30 +4,30 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    //Az N_ELEMENTS egybe van írva _ nélkül
-    int *b = new int[NELEMENTS];
-    //Nincs ; a sor végén, illetve nem "" között van a szöveg
-    std::cout << '1-100 ertekek duplazasa'
-    //Nincs befejezve a for ciklusmag
-    for (int i = 0;)
+    //Az N_ELEMENTS egybe volt írva _ nélkül
+    int *b = new int[N_ELEMENTS];
+    //Nem volt ; a sor végén, illetve nem "" között volt a szöveg
+    std::cout << "1-100 ertekek duplazasa"<<std::endl;
+    //Nem volt befejezve a for ciklusmag
+    for (int i = 0; i < N_ELEMENTS; i++)
     {
-        //0-99-ig írja ki a számok duplázását
-        b[i] = i * 2;
+        //0-99-ig írta volna ki a számok duplázását
+        b[i] = (i+1) * 2;
     }
-    //Nincs befejezve a for ciklusmag
-    for (int i = 0; i; i++)
+    //Nem volt befejezve a for ciklusmag
+    for (int i = 0; i<N_ELEMENTS; i++)
     {
-        //Nincs ; a sor végén
-        std::cout << "Ertek:"
+        //Nem volt ; a sor végén
+        std::cout << "Ertek:"<<b[i]<<std::endl;
     }
     std::cout << "Atlag szamitasa: " << std::endl;
-    //Nincs kezdőérték
-    int atlag;
-    //; helyett ,
-    for (int i = 0; i < N_ELEMENTS, i++)
+    //Nem volt kezdőérték
+    int atlag=0;
+    //; helyett , volt
+    for (int i = 0; i < N_ELEMENTS; i++)
     {
-        //Nincs ; a sor végén
-        atlag += b[i]
+        //Nem volt ; a sor végén
+        atlag += b[i];
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
